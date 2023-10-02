@@ -1,0 +1,66 @@
+@import "../global/param.scss";
+@import "../global/mixin.scss";
+
+.sectionAvantages{
+    padding: 60px $paddingPage;
+    background-color: #dfdeec;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    .sa-image{
+        position: relative;
+        img{
+            position: absolute;
+            width: 130%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+    .sa-texte{
+        position: relative;
+        z-index: 3;
+        .sa-texte-titre{
+            @include h2($pw : 450px);
+        }
+        .sa-item-content{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 30px;
+            .sa-item{
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                gap: 20px;
+                padding: 20px;
+                background: #fff;
+                box-shadow: 0 0 5px 3px #4242424d;
+                border-radius: 20px;
+                .sa-item-icon{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .sa-item-icon-content{
+                        padding: 25px 27px;
+                        background-color: rgb(25, 199, 25);
+                        border-radius: 99px;
+                        .sa-icon{
+                            color: #fff;
+                            font-size: 30px;
+                        }
+                    }
+                }
+                .sa-item-texte{
+                    h3{
+                        color: $mainColor;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        line-height: 22px;
+                        color: #555;
+                    }
+                }
+            }
+        }
+    }
+}

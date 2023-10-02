@@ -1,0 +1,76 @@
+@import '../global/param.scss';
+@import '../global/mixin.scss';
+
+header{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 20px);;
+    background: orange;
+    margin-bottom: 20px;
+    & > div{
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 70px);
+        bottom: 0;
+    }
+    .content-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, 0.699);
+        .header-textes{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           h1{
+            color: #fff;
+            font-size: 55px;
+            text-align: center;
+            font-weight: 500;
+            margin: 10px 0;
+           }
+           p{
+            color: #ddd;
+            font-size: 17px;
+            width: 70vw;
+            text-align: center;
+           }
+           button{
+            @include btn($width : 300px,$radius : 5px);
+           }
+        }
+    }
+    .header-btn{
+        display: flex;
+        gap: 10px;
+        button{
+            @include carre($size : 15px);
+            @include resetBtn;
+            border-radius: 99px;
+            border: solid 3px #fff;
+            transition: .5s;
+            &.active{
+                background: $mainColor;
+            }
+        }
+    }
+    .header-images{
+        background-color: orange;
+        & > div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+@for $i from 1 through 2 {
+    .header-img-#{$i}{
+        background-image: url(../../../public/assets/images/header#{$i}.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}

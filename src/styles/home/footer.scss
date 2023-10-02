@@ -1,0 +1,45 @@
+@import "../global/param.scss";
+@import "../global/mixin.scss";
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px $paddingPage;
+    background-color: #313131;
+    p,a{
+        color: #fff;
+    }
+    ul{
+        margin-top: 10px;
+        li{
+            list-style-type: none;
+            a{
+                text-decoration: none;
+                font-size: 13px;
+            }
+        }
+    }
+    .info{
+        p{
+            max-width: 400px;
+        }
+    }
+    .f-resaux{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        div{
+            width: 30px;
+            height: 30px;
+            border-radius: 999px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: rgb(54, 54, 54);
+        }
+    }
+}

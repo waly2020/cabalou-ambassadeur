@@ -1,0 +1,10 @@
+@import "../global/param.scss";
+@import "../global/mixin.scss";
+
+.sectionCalen{
+    padding: 70px $paddingPage;
+    .sc-titre{
+        margin-bottom: 30px;
+        @include h2;
+    }
+}

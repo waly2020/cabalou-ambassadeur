@@ -1,0 +1,36 @@
+@import './param.scss';
+
+@mixin btn($width : 50px,$background : $buttonBlue,$color : #fff,$radius : 999px){
+    background: $background;
+    border: none;
+    padding: 12px 30px;
+    border-radius: $radius;
+    min-width: $width;
+    color: $color;
+    margin: 30px 0;
+}
+@mixin carre($size : 10px){
+    width: $size;
+    height: $size;
+}
+@mixin resetBtn{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+@mixin h2($color : $mainColor,$pColor : #000,$mb : 10px,$pw : auto){
+    & > h2{
+        font: {
+            size: 35px;
+        };
+        color: $color;
+        margin-bottom: $mb
+    }
+    & > p{
+        color: $pColor;
+        line-height: 30px;
+        width: 100%;
+        max-width: $pw;
+    }
+}

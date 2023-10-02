@@ -1,0 +1,20 @@
+@import "../global/param.scss";
+@import "../global/mixin.scss";
+
+.sectionBlog{
+    padding: 60px $paddingPage;
+    background: #f8f4f4;
+    .sb-titre{
+        @include h2($pw : 500px);
+    }
+    .sb-blogs{
+        display: flex;
+        gap: 10px;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .empty-div{
+        flex-grow: 1;
+    }
+}

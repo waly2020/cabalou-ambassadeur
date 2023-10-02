@@ -1,0 +1,70 @@
+@import "../global/mixin.scss";
+@import "../global/param.scss";
+
+.devenir-ambassadeur{
+    padding: 60px $paddingPage;
+    background-color: $mainColor;
+    .am-section-texte{
+        @include h2($color : #fff,$pColor : #ddd,$pw : 500px);
+    }
+    .am-card-section{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 40px;
+        margin-top: 70px;
+        .am-card{
+            width: 100%;
+            max-width: 550px;
+            min-height: 188px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            overflow: hidden;
+            border-radius: 33px;
+            .am-card-main-conten{
+                .am-card-conten{
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 2.3fr;
+                    background: #fff;
+                    border-radius: 33px;
+                    .am-card-content-text{
+                        padding: 20px 0;
+                        h3{
+                            color: $mainColor;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            color: #000;
+                            line-height: 25px;
+                            font-size: 14px;
+                            max-width: 250px;
+                        }
+                    }
+                    .am-card-icn{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .am-icon{
+                            color: #ddd;
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+            .am-card-step{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px 76px 76px 0;
+                background-color: #4c23b0;
+                p{
+                    font-size: 35px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
