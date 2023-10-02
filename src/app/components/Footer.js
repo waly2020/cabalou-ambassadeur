@@ -5,7 +5,7 @@ export default function Footer(){
     return (
         <div className="footer">
         <div className="info">
-        <Image src="./assets/logo/logo.svg" width={120} height={70}/>
+        <Image src="./assets/logo/logo.svg" width={120} height={70} alt="Logo du site"/>
         <p>Laborum laboris ut mollit labore nulla.Deserunt minim cillum exercitation adipisicing.</p>
         <div className="f-resaux">
             <div className="f-icn">

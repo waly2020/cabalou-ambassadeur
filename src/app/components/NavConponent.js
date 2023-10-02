@@ -5,7 +5,7 @@ export default function NavComponent(){
     <>
     <nav className="menu">
         <div className="logo">
-            <Image src="./assets/logo/logo.svg" width={120} height={70}/>
+            <Image src="./assets/logo/logo.svg" width={120} height={70} alt="logo du site"/>
         </div>
         <ul className="links">
             <li><a href="#" className="active">Accueil</a></li>
