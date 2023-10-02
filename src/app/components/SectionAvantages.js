@@ -7,7 +7,7 @@ export default function SectionAvantages(){
         <>
         <div className="sectionAvantages">
             <div className="sa-image">
-                <img src="/assets/images/avantages.png" className="sa-image-img" alt="avantages"/>
+                <Image src="/assets/images/avantages.png" width={1964} height={1750} className="sa-image-img" alt="avantages"/>
             </div>
             <div className="sa-texte">
                 <div className="sa-texte-titre">

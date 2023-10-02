@@ -12,6 +12,8 @@
         img{
             position: absolute;
             width: 130%;
+            height: 100%;
+            object-fit: cover;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;

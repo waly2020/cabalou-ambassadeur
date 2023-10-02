@@ -1,10 +1,10 @@
 import "../../styles/home/blog.scss";
-
+import Image from "next/image";
 export default function Blog(){
     return (
         <article className="blog">
             <div className="b-img">
-                <img src="./assets/images/header1.jpg" alt="en tete"/>
+                <Image width={2000} height={1333} src="/assets/images/header1.jpg" alt="en tete"/>
             </div>
             <div className="b-textes">
 

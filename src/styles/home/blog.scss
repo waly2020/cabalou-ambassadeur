@@ -4,15 +4,17 @@
 .blog{
     min-width: 290px;
     width: calc(100%/4.2);
-    padding: 15px;
+    padding: 10px;
     background: #fff;
-    border-radius: 30px;
+    border-radius: 10px;
     .b-img{
         width: 100%;
+        height: auto;
         img{
             width: 100%;
+            height: auto;
             object-fit: cover;
-            border-radius: 15px;
+            border-radius: 5px;
         }
     }
     .b-textes{
