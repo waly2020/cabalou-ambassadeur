@@ -11,7 +11,7 @@ export default function SectionAmbassadeur(){
             </div>
             <div className="am-card-section">
                 <StepCard icon={<FaUserAlt className="am-icon"/>} step={1} titre="Première étape" color="#4c23b0">
-                  <p>
+                  <p className="content-card-para">
                      Excepteur consectetur magna sit consectetur esse nisi reprehenderit.
                      Excepteur consectetur magna sit consectetur esse nisi reprehenderit.
                   </p>

@@ -14,6 +14,9 @@ export default function StepCard({step = 0,icon,titre = "step 0",color = "royalb
                 </div>
             </div>
             <div className="am-card-step" style={{background : color}}>
+                <div className="shadow-icon">
+                {icon}
+                </div>
                 <p>{step < 10 ? "0" + step : step}</p>
             </div>
         </div>

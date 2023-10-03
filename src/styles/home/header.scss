@@ -5,12 +5,11 @@ header{
     position: relative;
     width: 100%;
     height: calc(100vh - 20px);;
-    background: orange;
     margin-bottom: 20px;
     & > div{
         position: absolute;
         width: 100%;
-        height: calc(100% - 70px);
+        height: calc(100% - $navHeight);
         bottom: 0;
     }
     .content-header{

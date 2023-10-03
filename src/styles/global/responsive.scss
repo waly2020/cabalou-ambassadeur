@@ -1,0 +1,88 @@
+@media screen and (max-width : 1010px) {
+    .menu{
+        .links,.inscription{
+            display: none !important;
+        }
+        .burger{
+            display: block !important;
+        }
+    }
+    .devenir-ambassadeur{
+        .am-card-section{
+            gap: 20px !important;
+            .am-card{
+                max-width: 450px !important;
+            }
+        }
+    }
+}
+@media screen and (max-width : 900px){
+    .section{
+        grid-template-columns: 1fr !important;
+        &.reverse .section-content-text{
+            grid-column: 1 !important;
+            grid-row: 2 !important;
+        }
+    }
+}
+@media screen and (max-width : 830px){
+    .devenir-ambassadeur{
+        .am-card-section{
+            grid-template-columns: 1fr !important;
+            .am-card{
+                max-width: 100% !important;
+            }
+        }
+    }
+    .sectionAvantages{
+        grid-template-columns: 1fr !important;
+        .sa-image{
+            display: none !important;
+        }
+        .sa-item{
+            grid-template-columns: 1fr !important;
+            .sa-item-icon{
+                position: absolute;
+                .sa-item-icon-content{
+                    padding: 0 !important;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transform: translate(-25%,-25%);
+                    .sa-icon{
+                        font-size: 13px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width : 430px){
+    .am-card-section{
+        .am-card{
+            grid-template-columns: 1fr !important;
+            grid-template-rows: 100px 1fr;
+            .am-card-conten{
+                grid-template-columns: 1fr !important;
+                border-radius: 20px !important;
+                .am-card-icn{
+                    display: none !important;
+                }
+            }
+            .am-card-step{
+                grid-row-start: 1;
+                border-radius: 33px 33px 0 0 !important;
+                .shadow-icon{
+                    display: block !important;
+                }
+            }
+        }
+    }
+    .header-textes{
+        h1{
+            font-size: 30px !important;
+        }
+    }
+}
