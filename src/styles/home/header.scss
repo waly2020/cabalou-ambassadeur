@@ -1,5 +1,6 @@
 @import '../global/param.scss';
 @import '../global/mixin.scss';
+@import "../global/functions.scss";
 
 header{
     position: relative;
@@ -25,7 +26,7 @@ header{
            align-items: center;
            h1{
             color: #fff;
-            font-size: 55px;
+            font-size: sizeResponsive(90);
             text-align: center;
             font-weight: 500;
             margin: 10px 0;
@@ -37,7 +38,7 @@ header{
             text-align: center;
            }
            button{
-            @include btn($width : 300px,$radius : 5px);
+            @include btn($width : 200px,$radius : 5px);
            }
         }
     }

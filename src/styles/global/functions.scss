@@ -1,0 +1,9 @@
+// $calc : calc(0.01 * 10vmin);
+// @mixin sizeResponsive($size){
+//     font-size: calc($calc * 55);
+// }
+
+@function sizeResponsive($size){
+    $calc : calc(0.01 * 10vmin);
+    @return calc($calc * $size);
+}

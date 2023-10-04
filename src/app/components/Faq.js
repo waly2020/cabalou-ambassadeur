@@ -8,8 +8,7 @@ export default function Faq({onPress,index = 1,clickedIndex = 0}){
             <div className="faq-header">
                 <div className="faq-header-texte">
                     <p>
-                        Minim sunt non aliquip qui incididunt proident sunt non aliquip qui
-                        Minim sunt non aliquip qui incididunt proinim sunt non aliquip ?
+                        Minim sunt non aliquip qui incididunt ?
                     </p>
                 </div>
                 <div className="faq-header-btn-content" onClick={onPress}>

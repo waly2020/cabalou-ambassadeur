@@ -29,7 +29,7 @@
     .devenir-ambassadeur{
         .am-card-section{
             grid-template-columns: 1fr !important;
-            .am-card{
+            .am-card{ 
                 max-width: 100% !important;
             }
         }
@@ -58,6 +58,29 @@
             }
         }
     }
+    .footer{
+        .info{
+            grid-column: 1/ span 3;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    .fc-toolbar{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 30px;
+        .fc-toolbar-chunk:nth-child(2){
+            grid-column: 1 / span 2 !important;
+            grid-row-start: 2;
+            justify-self: center;
+        }
+        .fc-toolbar-chunk:nth-child(3){
+            justify-self: flex-end;
+        }
+    }
 }
 @media screen and (max-width : 430px){
     .am-card-section{
@@ -83,6 +106,14 @@
     .header-textes{
         h1{
             font-size: 30px !important;
+        }
+    }
+    .footer {
+        & > div{
+            grid-column: 1 / span 3;
+        }
+        .f-resaux{
+            grid-column: 1 / span 2;
         }
     }
 }
