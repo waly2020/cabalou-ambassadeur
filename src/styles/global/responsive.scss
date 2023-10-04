@@ -1,4 +1,8 @@
-@media screen and (max-width : 1010px) {
+@media screen and (max-width : 1000px) {
+    body{
+        background: #000;
+        padding: 20px;
+    }
     .menu{
         background-color: orange !important;
         .links,.inscription{
