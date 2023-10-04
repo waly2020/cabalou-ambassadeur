@@ -1,7 +1,9 @@
 @media screen and (max-width : 1010px) {
     .menu{
+        background-color: orange !important;
         .links,.inscription{
             display: none !important;
+            opacity: .5;
         }
         .burger{
             display: block !important;
