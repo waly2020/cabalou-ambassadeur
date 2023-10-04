@@ -1,13 +1,7 @@
 @media screen and (max-width : 1000px) {
-    body{
-        background: #000;
-        padding: 20px;
-    }
     .menu{
-        background-color: orange !important;
         .links,.inscription{
             display: none !important;
-            opacity: .5;
         }
         .burger{
             display: block !important;
