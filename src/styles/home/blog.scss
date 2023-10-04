@@ -2,8 +2,9 @@
 @import "../global/mixin.scss";
 
 .blog{
-    min-width: 290px;
-    width: calc(100%/4.2);
+    min-width: 295px;
+    max-width: 380px;
+    width: 100%;
     padding: 10px;
     background: #fff;
     border-radius: 10px;
