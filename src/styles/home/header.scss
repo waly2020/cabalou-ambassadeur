@@ -5,12 +5,12 @@
 header{
     position: relative;
     width: 100%;
-    height: calc(100vh - 20px);;
+    height: calc(100vh - $navHeight);
     margin-bottom: 20px;
     & > div{
         position: absolute;
         width: 100%;
-        height: calc(100% - $navHeight);
+        height: 100%;
         bottom: 0;
     }
     .content-header{
@@ -46,13 +46,16 @@ header{
         display: flex;
         gap: 10px;
         button{
-            @include carre($size : 15px);
+            @include carre($size : 10px);
             @include resetBtn;
             border-radius: 99px;
-            border: solid 3px #fff;
+            opacity: .5;
+            // border: solid 3px #fff;
+            background: #fff;
             transition: .5s;
             &.active{
                 background: $mainColor;
+                opacity: 1;
             }
         }
     }
@@ -72,5 +75,12 @@ header{
         background-image: url(../../../public/assets/images/header#{$i}.jpg);
         background-size: cover;
         background-position: center;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: 1s;
+        &.active{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }

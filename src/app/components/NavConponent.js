@@ -2,6 +2,8 @@
 import Image from "next/image";
 import"../../styles/nav/nav.scss";
 import { useState } from "react";
+import { Link } from "react-scroll/modules";
+
 export default function NavComponent(){
     const [burger,setBurger] = useState("");
     const toggle = () =>{
@@ -19,13 +21,14 @@ export default function NavComponent(){
         </div>
 
         <ul className="links">
-            <li><a href="#" className="active">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Comment ca marche ?</a></li>
-            <li><a href="#">Attantes et avantages</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Evenement</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
+            <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
+            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Comment ca marche ?</Link></li>
+            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Attantes</Link></li>
+            <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
+            <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
+            <li><Link activeClass="active" to="event" spy={true} smooth={true} offset={-70} duration={500}>Evenement</Link></li>
+            <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
         <a href="#" className="inscription">
            <button>Inscription</button>
@@ -43,13 +46,14 @@ export default function NavComponent(){
         </a>
         </div>
         <ul className="links">
-            <li><a href="#" className="active">Accueil</a></li>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Comment ca marche ?</a></li>
-            <li><a href="#">Attantes et avantages</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Evenement</a></li>
-            <li><a href="#">Blog</a></li>
+        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
+            <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
+            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Comment ca marche ?</Link></li>
+            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Attantes</Link></li>
+            <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
+            <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
+            <li><Link activeClass="active" to="event" spy={true} smooth={true} offset={-70} duration={500}>Evenement</Link></li>
+            <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
     </nav>
     </>);

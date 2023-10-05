@@ -2,7 +2,7 @@ import '../../styles/home/sectionBlog.scss';
 import Blog from './Blog';
 export default function SectionBlog(){
     return (
-        <div className='sectionBlog'>
+        <div className='sectionBlog' id='blog'>
             <div className='sb-titre'>
                 <h2>Blog</h2>
                 <p>

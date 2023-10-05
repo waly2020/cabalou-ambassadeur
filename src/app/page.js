@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <HeaderComponent/>
-      <SimpleSection opacity={0.8}>
+      <SimpleSection opacity={0.8} id="about">
       <p>
         Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
         Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.
@@ -25,7 +25,7 @@ export default function Home() {
         Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
       </p>
       </SimpleSection>
-      <SimpleSection reverse={true} titre="Notre vision" image="vision.jpeg" opacity={0.3}>
+      <SimpleSection reverse={true} titre="Notre vision" image="vision.jpeg" id="about" opacity={0.3}>
       <p>
         Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
         Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.

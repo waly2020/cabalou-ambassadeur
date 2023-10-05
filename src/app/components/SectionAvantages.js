@@ -5,7 +5,7 @@ import "../../styles/home/sectionAvantages.scss";
 export default function SectionAvantages(){
     return (
         <>
-        <div className="sectionAvantages">
+        <div className="sectionAvantages" id="avantages">
             <div className="sa-image">
                 <Image src="/assets/images/avantages.png" width={1964} height={1750} className="sa-image-img" alt="avantages"/>
             </div>

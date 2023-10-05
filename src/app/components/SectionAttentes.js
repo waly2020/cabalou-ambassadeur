@@ -3,7 +3,7 @@ import "../../styles/home/sectionAttentes.scss"
 export default function SectionAttentes(){
     return (
         <>
-        <section className="sectionAttentes">
+        <section className="sectionAttentes" id="attentes">
         <div className="section-content-text">
            <h2>Nos attentes</h2>
            <p>

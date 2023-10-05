@@ -24,6 +24,11 @@
             grid-template-columns: 3fr 1fr;
             overflow: hidden;
             border-radius: 33px;
+            &:hover{
+                .am-icon{
+                    color: $mainColor !important;
+                }
+            }
             .am-card-main-conten{
                 .am-card-conten{
                     width: 100%;
@@ -52,6 +57,7 @@
                         .am-icon{
                             color: #ddd;
                             font-size: 60px;
+                            transition: .5s;
                         }
                     }
                 }

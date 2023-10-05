@@ -8,7 +8,7 @@ import esLocale from '@fullcalendar/core/locales/fr';
 
 export default function SectionCalen() {
     return (
-        <div className="sectionCalen">
+        <div className="sectionCalen" id="event">
             <div className="sc-titre">
             <h2>Formation et evenement</h2>
             </div>

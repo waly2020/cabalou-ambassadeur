@@ -12,7 +12,7 @@ export default function SectionFaq(){
         }
     }
     return (
-        <div className="sectionFaq">
+        <div className="sectionFaq" id="faq">
             <h2>Des réponses à vos questions</h2>
             <Faq onPress={() => {activeFaq(1,clickedIndex)}} index={1} clickedIndex={clickedIndex}/>
             <Faq onPress={() => {activeFaq(2,clickedIndex)}} index={2} clickedIndex={clickedIndex}/>

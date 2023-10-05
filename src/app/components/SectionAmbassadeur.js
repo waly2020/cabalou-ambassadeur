@@ -4,7 +4,7 @@ import {FaUserAlt,FaUserCheck,FaRegEdit,FaRegThumbsUp} from "react-icons/fa"
 
 export default function SectionAmbassadeur(){
     return (
-        <section className="devenir-ambassadeur">
+        <section className="devenir-ambassadeur" id="tuto">
             <div className="am-section-texte">
                 <h2>Comment devenir ambassadeur ?</h2>
                 <p>Sint culpa cupidatat ut Lorem.Excepteur reprehenderit cillum ut quis ullamco quis aute ea consequat labore qui tempor commodo.</p>
