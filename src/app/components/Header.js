@@ -9,7 +9,7 @@ export default function HeaderComponent(){
     const active = (index,nextImg)=>{
         return index == nextImg ? "active" : "";
     }
-    useEffect(()=>{
+    useEffect(()=>{ 
        time = setInterval(() => {
             if(cpt >= 5){
                 setCpt(0);

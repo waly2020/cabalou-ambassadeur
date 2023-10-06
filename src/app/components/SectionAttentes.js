@@ -6,10 +6,6 @@ export default function SectionAttentes(){
         <section className="sectionAttentes" id="attentes">
         <div className="section-content-text">
            <h2>Nos attentes</h2>
-           <p>
-            Nostrud mollit ut et Lorem pariatur excepteur nisi eiusmod irure id.
-            Nostrud mollit ut et Lorem pariatur excepteur nisi eiusmod irure id.
-           </p>
         </div>
         <div className="att-section-card">
             {/*  */}

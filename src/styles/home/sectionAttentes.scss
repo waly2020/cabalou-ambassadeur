@@ -5,7 +5,7 @@
     padding: 40px $paddingPage;
     margin: 30px 0;
     .section-content-text{
-        @include h2($pw : 600px);
+        @include h2($pw : 600px,$align : center);
     }
     .att-section-card{
         display: flex;
