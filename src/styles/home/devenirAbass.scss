@@ -40,8 +40,13 @@
                     .am-card-content-text{
                         padding: 20px 10px;
                         h3{
-                            color: $mainColor;
                             margin-bottom: 10px;
+                            .stp-mobile{
+                                display: none;
+                                color: #fff;
+                                padding: 5px 10px;
+                                border-radius: 99px;
+                            }
                         }
                         p{
                             color: #000;

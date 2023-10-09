@@ -21,7 +21,7 @@ export default function SectionCalen() {
                 headerToolbar={{
                     start : "prev,next",
                     center : "title",
-                    end : "timeGridWeek,dayGridMonth,multiMonthYear,listWeek"
+                    end : "timeGridWeek,dayGridMonth,multiMonthYear"
                 }}
                 height={"500px"}
                 events={[

@@ -8,7 +8,7 @@ export default function StepCard({step = 0,icon,titre = "step 0",color = "royalb
                         {icon}
                     </div>
                     <div className="am-card-content-text">
-                        <h3>{titre}</h3>
+                        <h3 style={{color : color}}><span className="stp-mobile" style={{background : color}}>{step < 10 ? "0" + step : step}</span> {titre}</h3>
                         {children}
                     </div>
                 </div>

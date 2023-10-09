@@ -71,7 +71,7 @@
         display: grid !important;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2,1fr);
-        gap: 30px;
+        gap: 10px;
         .fc-toolbar-chunk:nth-child(2){
             grid-column: 1 / span 2 !important;
             grid-row-start: 2;
@@ -115,5 +115,16 @@
         .f-resaux{
             grid-column: 1 / span 2;
         }
+    }
+}
+@media screen and (max-width : 350px){
+    .stp-mobile{
+        display: inline-block !important;
+    }
+    .am-card{
+        display: block !important;
+    }
+    .am-card-step{
+        display: none !important;
     }
 }
