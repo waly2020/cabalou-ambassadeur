@@ -7,14 +7,6 @@
             display: block !important;
         }
     }
-    .devenir-ambassadeur{
-        .am-card-section{
-            gap: 20px !important;
-            .am-card{
-                max-width: 450px !important;
-            }
-        }
-    }
 }
 @media screen and (max-width : 900px){
     .section{
@@ -26,14 +18,6 @@
     }
 }
 @media screen and (max-width : 830px){
-    .devenir-ambassadeur{
-        .am-card-section{
-            grid-template-columns: 1fr !important;
-            .am-card{ 
-                max-width: 100% !important;
-            }
-        }
-    }
     .sectionAvantages{
         grid-template-columns: 1fr !important;
         .sa-image{
@@ -41,6 +25,7 @@
         }
         .sa-item{
             grid-template-columns: 1fr !important;
+            padding-top: 20px !important;
             .sa-item-icon{
                 position: absolute;
                 .sa-item-icon-content{
@@ -82,30 +67,33 @@
         }
     }
 }
-@media screen and (max-width : 430px){
-    .am-card-section{
-        .am-card{
-            grid-template-columns: 1fr !important;
-            grid-template-rows: 100px 1fr;
-            .am-card-conten{
-                grid-template-columns: 1fr !important;
-                border-radius: 20px !important;
-                .am-card-icn{
-                    display: none !important;
-                }
-            }
-            .am-card-step{
-                grid-row-start: 1;
-                border-radius: 33px 33px 0 0 !important;
-                .shadow-icon{
-                    display: block !important;
+
+@media screen and (max-width : 620px){
+    .devenir-ambassadeur{
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 200px 1fr;
+        .am-sec-step{
+            grid-row: 2 / span 1;
+            .link-form{
+                display: block;
+                button{
+                    width: 100%;
                 }
             }
         }
     }
+}
+@media screen and (max-width : 430px){
     .header-textes{
         h1{
             font-size: 30px !important;
+        }
+    }
+    .devenir-ambassadeur{
+        .am-sec-step{
+            h2{
+                font-size: 25px !important;
+            }
         }
     }
     .footer {
@@ -115,16 +103,5 @@
         .f-resaux{
             grid-column: 1 / span 2;
         }
-    }
-}
-@media screen and (max-width : 350px){
-    .stp-mobile{
-        display: inline-block !important;
-    }
-    .am-card{
-        display: block !important;
-    }
-    .am-card-step{
-        display: none !important;
     }
 }

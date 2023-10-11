@@ -19,14 +19,15 @@
     outline: none;
     cursor: pointer;
 }
-@mixin h2($color : $mainColor,$pColor : #000,$mb : 10px,$pw : auto,$align : left){
+@mixin h2($color : $mainColor,$pColor : #000,$mb : 10px,$pw : auto,$align : left,$tw : auto){
     & > h2{
         font: {
             size: 35px;
         };
         text-align: $align;
         color: $color;
-        margin-bottom: $mb
+        margin-bottom: $mb;
+        max-width: $tw;
     }
     & > p{
         color: $pColor;

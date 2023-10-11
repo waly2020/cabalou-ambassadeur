@@ -37,6 +37,14 @@ export default function Footer() {
                     <li><a href="#">Contactez nous</a></li>
                 </ul>
             </div>
+            <div className="f-nav">
+                <p>PLUS</p>
+                <ul>
+                    <li><a href="#">Hébergeurs</a></li>
+                    <li><a href="#">Proximité</a></li>
+                    <li><a href="#">Moins chers</a></li>
+                </ul>
+            </div>
         </div>
     );
 }

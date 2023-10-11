@@ -33,23 +33,23 @@
             .sa-item{
                 position: relative;
                 display: grid;
-                grid-template-columns: 1fr 4fr;
+                grid-template-columns: 0.3fr 4fr;
                 gap: 20px;
-                padding: 20px;
+                padding: 10px;
                 background: #fff;
-                box-shadow: 0 0 5px 3px #4242424d;
-                border-radius: 20px;
+                box-shadow: 0 0 5px 3px #9b9a9a34;
+                border-radius: 5px;
                 .sa-item-icon{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     .sa-item-icon-content{
-                        padding: 25px 27px;
+                        padding: 8px 10px;
                         background-color: rgb(25, 199, 25);
                         border-radius: 99px;
                         .sa-icon{
                             color: #fff;
-                            font-size: 30px;
+                            font-size: 20px;
                         }
                     }
                 }

@@ -2,3 +2,11 @@ $mainColor : #1E1777;
 $buttonBlue : #2F1FFE;
 $paddingPage : 4vw;
 $navHeight : 70px;
+
+.canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}

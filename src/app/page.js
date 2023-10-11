@@ -26,24 +26,11 @@ export default function Home() {
             Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
           </p>
         </SimpleSection>
-        <SimpleSection reverse={true} titre="Notre vision" image="vision.jpeg" opacity={0.3}>
-          <p>
-            Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
-            Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.
-            Aliquip Lorem deserunt Lorem enim occaecat enim tempor. Dolor nostrud eu ea dolore veniam.
-            Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
-            Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
-            Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.
-            Aliquip Lorem deserunt Lorem enim occaecat enim tempor. Dolor nostrud eu ea dolore veniam.
-            Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
-          </p>
-        </SimpleSection>
       </div>
       <SectionAmbassadeur />
       <SectionAttentes />
       <SectionAvantages />
       <SectionFaq />
-      <SectionCalen />
       <SectionBlog />
       <Footer />
     </main>

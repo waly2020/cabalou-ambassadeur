@@ -23,15 +23,14 @@ export default function NavComponent(){
         <ul className="links">
             <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
             <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
-            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Comment ca marche ?</Link></li>
-            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Attantes</Link></li>
+            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Etre ambassadeur ?</Link></li>
+            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
             <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
             <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
-            <li><Link activeClass="active" to="event" spy={true} smooth={true} offset={-70} duration={500}>Evenement</Link></li>
             <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
         <a href="#" className="inscription">
-           <button>Inscription</button>
+           <button>Je postule</button>
         </a>
         <button className={`burger ${burger}`} onClick={toggle}>
             <div className="b-h"></div>
@@ -42,17 +41,16 @@ export default function NavComponent(){
     <nav className={`navBar ${burger}`}>
         <div className="navBar-header">
         <a href="#" className="inscription">
-           <button>Inscription</button>
+           <button>Je postule</button>
         </a>
         </div>
         <ul className="links">
         <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
             <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
-            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Comment ca marche ?</Link></li>
-            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Attantes</Link></li>
+            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Etre ambassadeur ?</Link></li>
+            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
             <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
             <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
-            <li><Link activeClass="active" to="event" spy={true} smooth={true} offset={-70} duration={500}>Evenement</Link></li>
             <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
     </nav>

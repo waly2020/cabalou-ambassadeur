@@ -35,7 +35,7 @@ export default function HeaderComponent(){
                 <div className="header-textes">
                     <h1>Notre service, votre succès en déplacement</h1>
                     <p>Lorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolor</p>
-                    <button>Inscription</button>
+                    <button>Je postule</button>
                 </div>
                 {/* btn slide */}
                 <div className="header-btn">
