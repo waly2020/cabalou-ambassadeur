@@ -14,8 +14,6 @@ export default function SectionBlog(){
                     <Blog/>
                     <Blog/>
                     <Blog/>
-                    <Blog/>
-                    <Blog/>
                     <div className='empty-div'></div>
                 </div>
             </div>
