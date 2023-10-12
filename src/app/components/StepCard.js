@@ -1,8 +1,13 @@
 
-export default function StepCard({step = 0,icon,titre = "step 0",color = "royalblue"}){
+export default function StepCard({step = 0,icon,titre = "step 0"}){
     return (
         <div className="am-card">
-            <p className="am-step-item" style={{color : color}}><span className="am-card-icon" style={{background : color}}>{icon}</span>étape {step < 10 ? "0" + step : step}</p>
+            <div className="am-card-icon">
+                <p className="am-icon-icon">
+                  {icon}
+                </p>
+                <p className="am-step-item">{step}</p>
+            </div>
             <p className="am-step-item-desc">{titre}</p>
         </div>
     );

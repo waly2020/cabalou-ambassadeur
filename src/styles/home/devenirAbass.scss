@@ -3,83 +3,54 @@
 
 .devenir-ambassadeur{
     position: relative;
-    padding: 60px $paddingPage;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
-    .canvas{
-        .canvas-img{
-            position: absolute;
-            width: 300px;
+    padding: 80px $paddingPage;
+    background-color: #f5f5f5;
+    .da-sec-titre{
+        @include h2($align : center);
+        margin-bottom: 70px;
+    }
+    .da-sec-steps{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-flow: row wrap;
+    }
+    .am-card{
+        width: 100%;
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .am-card-icon{
+            position: relative;
+            width: 100px;
             height: 100px;
-            background: url("../../../public/assets/logo/logo.svg");
-            background-repeat: no-repeat;
-            background-size: contain;
-            opacity: .1;
-            filter: drop-shadow(0px 0px 2px #555);
-            &.cm-1{
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid 5px #888;
+            border-radius: 50%;
+            .am-icon-icon{
+                font-size: 30px;
+                color: $mainColor;
             }
-            &.cm-2{
-                left: 50px;
-                top: 50%;
-                transform: translate(-50%,-50%) rotate(45deg);
-            }
-            &.cm-3{
-                right: 0;
-                bottom: 0;
-                transform: rotate(-43deg);
-            }
-            &.cm-4{
+            .am-step-item{
+                position: absolute;
                 right: 0;
                 top: 0;
-                transform: rotate(30deg);
-            }
-        }
-    }
-    .am-sec-step{
-        @include h2;
-        .cta{
-            @include resetBtn;
-            background-color: $mainColor;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-        }
-        .am-card{
-            margin: 20px 0;
-            .am-step-item{
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                gap: 10px;
+                color: #fff;
+                background: $mainColor;
+                padding: 5px 8px;
+                font-size: 13px;
                 border-radius: 99px;
-                text-transform: uppercase;
-                font-weight: bold;
-                .am-card-icon{
-                    color: #fff;
-                    width: 30px;
-                    height: 30px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 13px;
-                    border-radius: 99px;
-                }
-            }
-            .am-step-item-desc{
-                margin-top: 10px;
-
             }
         }
-    }
-    .am-sec-img{
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .am-step-item-desc{
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }
 }

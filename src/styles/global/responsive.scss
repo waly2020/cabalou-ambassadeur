@@ -68,32 +68,10 @@
     }
 }
 
-@media screen and (max-width : 620px){
-    .devenir-ambassadeur{
-        grid-template-columns: 1fr !important;
-        grid-template-rows: 200px 1fr;
-        .am-sec-step{
-            grid-row: 2 / span 1;
-            .link-form{
-                display: block;
-                button{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
 @media screen and (max-width : 430px){
     .header-textes{
         h1{
             font-size: 30px !important;
-        }
-    }
-    .devenir-ambassadeur{
-        .am-sec-step{
-            h2{
-                font-size: 25px !important;
-            }
         }
     }
     .footer {
