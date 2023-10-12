@@ -7,7 +7,7 @@
     padding: 0 $paddingPage;
     margin: 100px 0;
     &.reverse .section-content-text{
-        grid-column: 1;
+        grid-column: 1; 
         grid-row: 1;
     }
     .section-image{
@@ -17,6 +17,11 @@
         background-size: cover;
         background-position: center;
         overflow: hidden;
+        .section-image-overlay{
+            img{
+                width: 70%;
+            }
+        }
         & > div{
             position: absolute;
             display: flex;

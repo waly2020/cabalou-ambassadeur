@@ -5,6 +5,7 @@ export default function SectionAttentes(){
     return (
         <>
         <section className="sectionAttentes" id="attentes">
+        <div className="att-background"></div>
         <div className="section-content-text">
            <h2>vos missions</h2>
         </div>

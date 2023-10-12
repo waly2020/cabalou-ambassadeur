@@ -2,10 +2,27 @@
 @import "../global/mixin.scss";
 
 .sectionAttentes{
-    padding: 40px $paddingPage;
-    margin: 30px 0;
+    position: relative;
+    // padding: 40px 0;
+    background-color: rgba(0, 0, 0, 0.603);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin: 30px 0;
+    .att-background{
+        position: absolute;
+        // opacity: .5;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-image: url("../../../public/assets/images/header2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
     .section-content-text{
-        @include h2($pw : 600px,$align : center);
+        margin-top: 40px;
+        @include h2($pw : 600px,$align : center,$color : #fff);
     }
     .att-section-card{
         display: flex;
@@ -13,10 +30,14 @@
         gap: 20px;
         justify-content: space-around;
         align-items: center;
-        margin-top: 60px;
+        // margin-top: 60px;
+        padding: 40px $paddingPage;
         .att-card-item{
             width: 100%;
             max-width: 380px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
             .att-icon{
                 color: #bbb;
                 font-size: 50px;
