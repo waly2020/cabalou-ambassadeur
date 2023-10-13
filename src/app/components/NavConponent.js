@@ -15,6 +15,7 @@ export default function NavComponent(){
     }
     return (
     <>
+    <div className={`menu-shadow ${burger}`} onClick={toggle}></div>
     <nav className="menu">
         <div className="logo">
             <Image src="./assets/logo/logo.svg" width={120} height={70} alt="logo du site"/>
@@ -38,20 +39,20 @@ export default function NavComponent(){
             <div className="b-b"></div>
         </button>
     </nav>
-    <nav className={`navBar ${burger}`}>
+    <nav className={`navBar ${burger}`}> 
         <div className="navBar-header">
         <a href="#" className="inscription">
            <button>Je postule</button>
         </a>
         </div>
         <ul className="links">
-        <li><Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
-            <li><Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
-            <li><Link activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Etre ambassadeur ?</Link></li>
-            <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
-            <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
-            <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
-            <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Accueil</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>A propos</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="tuto" spy={true} smooth={true} offset={-70} duration={500}>Etre ambassadeur ?</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
+            <li><Link onClick={toggle} activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
     </nav>
     </>);
