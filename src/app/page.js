@@ -16,14 +16,13 @@ export default function Home() {
       <div id="about">
         <SimpleSection opacity={0.8}>
           <p>
-            Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
-            Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.
-            Aliquip Lorem deserunt Lorem enim occaecat enim tempor. Dolor nostrud eu ea dolore veniam.
-            Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
-            Minim eu magna id eiusmod non ipsum reprehenderit veniam labore non commodo.
-            Dolore laborum voluptate sint ut exercitation nulla adipisicing officia et.
-            Aliquip Lorem deserunt Lorem enim occaecat enim tempor. Dolor nostrud eu ea dolore veniam.
-            Excepteur in ea in proident velit laboris. Irure nisi ullamco pariatur exercitation qui veniam ut duis sint velit et cillum.
+          Créé en 2022 au Gabon , Cabalou est une plateforme de mise en relation entre les propriétaires d'hébergements et les voyageurs d’affaires. Celle-ci permet aux professionnels en voyage de réserver des logements confortables, fiables et idéalement situés dans diverses villes d'Afrique.
+          </p>
+          <p>
+          Chaque jour, nous travaillons avec passion et détermination pour devenir la plateforme de voyage la plus aimée, la plus utilisée et la plus rentable pour les professionnels en Afrique d’ici 2030.
+          </p>
+          <p>
+          Nous sommes convaincus que Cabalou est bien plus qu’un service d’hébergement, c'est l'occasion pour les voyageurs de vivre une expérience authentique car chaque voyage d’affaires en Afrique est une opportunité d’immersion culturelle .
           </p>
         </SimpleSection>
       </div>

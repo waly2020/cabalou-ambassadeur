@@ -29,8 +29,11 @@
             display: none !important;
         }
         .sa-item{
-            grid-template-columns: 1fr !important;
+            grid-template-columns: 1px 1fr !important;
             padding-top: 20px !important;
+            .sa-item-texte{
+                grid-column: 2 /span 1;
+            }
             .sa-item-icon{
                 position: absolute;
                 .sa-item-icon-content{

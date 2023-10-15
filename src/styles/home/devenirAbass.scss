@@ -11,9 +11,10 @@
     }
     .da-sec-steps{
         display: flex;
+        align-items: flex-start;
+        flex-flow: row wrap;
         justify-content: center;
         gap: 30px;
-        flex-flow: row wrap;
     }
     .am-card{
         width: 100%;
@@ -46,6 +47,11 @@
                 padding: 5px 8px;
                 font-size: 13px;
                 border-radius: 99px;
+            }
+        }
+        .am-step-desc{
+            & > * {
+                text-align: center;
             }
         }
         .am-step-item-desc{

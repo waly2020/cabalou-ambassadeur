@@ -19,8 +19,12 @@
             display: grid;
             grid-template-columns: 5fr 0.5fr;
             gap: 20px;
-            padding: 10px;
             border-bottom: solid 2px #d7d6d6;
+            padding-bottom: 10px;
+            .faq-header-texte{
+                display: flex;
+                align-items: center;
+            }
             .faq-header-btn-content{
                 display: flex;
                 justify-content: flex-end;

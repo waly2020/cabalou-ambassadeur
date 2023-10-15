@@ -1,6 +1,7 @@
 import Image from "next/image";
 import {FaCheckDouble} from "react-icons/fa";
 import "../../styles/home/sectionAvantages.scss";
+import AvantageItem from "./AvantageItem";
 
 export default function SectionAvantages(){
     return (
@@ -19,55 +20,24 @@ export default function SectionAvantages(){
                 </div>
                 <div className="sa-item-content">
                     {/*  */}
-                    <div className="sa-item">
-                        <div className="sa-item-icon">
-                            <div className="sa-item-icon-content">
-                                <FaCheckDouble className="sa-icon"/>
-                            </div>
-                        </div>
-                        <div className="sa-item-texte">
-                            <h3>vous aurez l'avantage de...</h3>
-                            <p>
-                                Voluptate ut consequat culpa deserunt sint magna adipisicing.
-                                Voluptate ut consequat culpa deserunt sint magna.
-                                Voluptate ut consequat culpa deserunt sin.
-                            </p>
-                        </div>
-                    </div>
+                    <AvantageItem>
+                        <h3>Complément de revenu.</h3>
+                    </AvantageItem>
                     {/*  */}
                     {/*  */}
-                    <div className="sa-item">
-                        <div className="sa-item-icon">
-                            <div className="sa-item-icon-content">
-                                <FaCheckDouble className="sa-icon"/>
-                            </div>
-                        </div>
-                        <div className="sa-item-texte">
-                            <h3>vous aurez l'avantage de...</h3>
-                            <p>
-                                Voluptate ut consequat culpa deserunt sint magna adipisicing.
-                                Voluptate ut consequat culpa deserunt sint magna.
-                                Voluptate ut consequat culpa deserunt sin.
-                            </p>
-                        </div>
-                    </div>
+                    <AvantageItem>
+                        <h3>Faire partie d’une grande communauté panafricaine de voyageurs.</h3>
+                    </AvantageItem>
                     {/*  */}
                     {/*  */}
-                    <div className="sa-item">
-                        <div className="sa-item-icon">
-                            <div className="sa-item-icon-content">
-                                <FaCheckDouble className="sa-icon"/>
-                            </div>
-                        </div>
-                        <div className="sa-item-texte">
-                            <h3>vous aurez l'avantage de...</h3>
-                            <p>
-                                Voluptate ut consequat culpa deserunt sint magna adipisicing.
-                                Voluptate ut consequat culpa deserunt sint magna.
-                                Voluptate ut consequat culpa deserunt sin.
-                            </p>
-                        </div>
-                    </div>
+                    <AvantageItem>
+                        <h3>Vivre une expérience humaine.</h3>
+                    </AvantageItem>
+                    {/*  */}
+                    {/*  */}
+                    <AvantageItem>
+                        <h3>Participer aux évènements.</h3>
+                    </AvantageItem>
                     {/*  */}
                 </div>
             </div>

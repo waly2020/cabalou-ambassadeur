@@ -11,13 +11,24 @@ export default function SectionAttentes(){
         </div>
         <div className="att-section-card">
             {/*  */}
-            <Mission/>
+            <Mission icon={<FaRegEdit/>}>
+            <h3>Orienter de nouveaux hébergeurs vers Cabalou</h3>
+            </Mission>
             {/*  */}
             {/*  */}
-            <Mission/>
+            <Mission icon={<FaRegThumbsUp/>}>
+            <h3>Renforcer  la confiance et la fiabilité de la marque Cabalou</h3>
+            </Mission>
             {/*  */}
             {/*  */}
-            <Mission/>
+            <Mission icon={<FaUserCheck/>}>
+            <h3>Participer au développement de Cabalou</h3>
+            </Mission>
+            {/*  */}
+            {/*  */}
+            <Mission icon={<FaUserAlt/>}>
+            <h3>Informer sa communauté locale des événements de Cabalou</h3>
+            </Mission>
             {/*  */}
         </div>
         </section>
