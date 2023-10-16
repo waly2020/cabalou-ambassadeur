@@ -48,3 +48,16 @@ $navHeight : 70px;
         opacity: 0;
     }
 }
+.btn-read-more{
+    display: none;
+    border: none;
+    outline: none;
+    background: none;
+    color: $mainColor;
+    font-weight: bold;
+}
+.read-more{
+    &.active{
+        display: block;
+    }
+}

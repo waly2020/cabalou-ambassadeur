@@ -108,6 +108,19 @@
             }
         }
     }
+    .section{
+        margin-bottom: 20px !important;
+    }
+    .read-more{
+        display: none;
+    }
+    .btn-read-more{
+        display: inline-block !important;
+        &.plus.active{
+            display: none !important;
+        }
+    }
+
 }
 @media screen and (max-width : 430px){
     .header-textes{
