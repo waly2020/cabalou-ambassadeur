@@ -30,7 +30,6 @@ export default function Home() {
       <SectionAttentes />
       <SectionAvantages />
       <SectionFaq />
-      <SectionBlog />
       <Footer />
     </main>
   )

@@ -1,7 +1,7 @@
 import "../../styles/home/devenirAbass.scss";
 import StepCard from "./StepCard";
 import Image from "next/image";
-import {FaUserAlt,FaUserCheck,FaRegEdit,FaRegThumbsUp} from "react-icons/fa"
+import {FaUserAlt,FaUserTie,FaRegEdit,FaRegThumbsUp,FaLocationArrow} from "react-icons/fa"
 
 export default function SectionAmbassadeur(){
     return (
@@ -18,12 +18,12 @@ export default function SectionAmbassadeur(){
               Les informations données par le candidat feront l’objet d’une vérification.Cabalou se charge de traiter toutes les demandes reçues et de recontacter les meilleurs postulants.
               </p>
             </StepCard>
-            <StepCard icon={<FaRegThumbsUp/>} step={3} titre="Seléction">
+            <StepCard icon={<FaLocationArrow/>} step={3} titre="Seléction">
               <p>
               Entretien en ligne ou téléphonique par un panel de l'équipe Cabalou.
               </p>
             </StepCard>
-            <StepCard icon={<FaUserAlt/>} step={4} titre="Entretien">
+            <StepCard icon={<FaUserTie/>} step={4} titre="Entretien">
               <p>
               Le candidat retenu après entretien sera contacté dans 72 heures.
 

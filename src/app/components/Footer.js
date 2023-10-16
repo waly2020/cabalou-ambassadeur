@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="info">
                 <div className="f-logo">
                     <Image src="./assets/logo/logo.svg" width={120} height={70} alt="Logo du site" />
-                    <p>Laborum laboris ut mollit labore nulla.Deserunt.</p>
+                    <p>Première plateforme 100 % dédiée a la location saisonnière pour les professionnels au Gabon.</p>
                 </div>
                 <div className="f-resaux">
                     <div className="f-icn">

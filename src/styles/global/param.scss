@@ -1,5 +1,5 @@
 $mainColor : #1E1777;
-$buttonBlue : #2F1FFE;
+$buttonBlue : #1302fa;
 $paddingPage : 4vw;
 $navHeight : 70px;
 
@@ -9,4 +9,42 @@ $navHeight : 70px;
     height: 100%;
     z-index: -1;
     overflow: hidden;
+}
+.button-cta{
+    button{
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        outline: none;
+        background: $buttonBlue;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 5px;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 0;
+            height: 0;
+            background-color: #fff;
+            border-radius: 9999px;
+            animation: clickMe 8s linear infinite;
+        }
+    }
+}
+@keyframes clickMe {
+    0%{
+        width: 0;
+        height: 0;
+        opacity: .5;
+    }
+    10%,100%{
+        width: 800px;
+        height: 800px;
+        opacity: 0;
+    }
 }

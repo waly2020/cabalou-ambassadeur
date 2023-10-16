@@ -3,6 +3,7 @@ import Image from "next/image";
 import"../../styles/nav/nav.scss";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
+import Button from "./Button";
 
 export default function NavComponent(){
     const [burger,setBurger] = useState("");
@@ -28,11 +29,8 @@ export default function NavComponent(){
             <li><Link activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
             <li><Link activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
             <li><Link activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
-            <li><Link activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
-        <a href="#" className="inscription">
-           <button>Je postule</button>
-        </a>
+        <Button/>
         <button className={`burger ${burger}`} onClick={toggle}>
             <div className="b-h"></div>
             <div className="b-m"></div>
@@ -52,7 +50,6 @@ export default function NavComponent(){
             <li><Link onClick={toggle} activeClass="active" to="attentes" spy={true} smooth={true} offset={-70} duration={500}>Vos missions</Link></li>
             <li><Link onClick={toggle} activeClass="active" to="avantages" spy={true} smooth={true} offset={-70} duration={500}>Avantages</Link></li>
             <li><Link onClick={toggle} activeClass="active" to="faq" spy={true} smooth={true} offset={-70} duration={500}>FAQ</Link></li>
-            <li><Link onClick={toggle} activeClass="active" to="blog" spy={true} smooth={true} offset={-70} duration={500}>Blog</Link></li>
         </ul>
     </nav>
     </>);

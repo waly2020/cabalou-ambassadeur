@@ -74,11 +74,39 @@
             justify-self: flex-end;
         }
     }
+    .sec-mission{
+        display: grid;
+        grid-template-columns: 1fr !important;
+        .sec-mission-image{
+            display: none;
+        }
+        .sec-mission-content{
+            .sec-m-mission{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+        }
+        .button-cta{
+            max-width: 100% !important;
+        }
+    }
 }
 @media screen and (max-width : 655px){
     .blog{
         // background-color: orange !important;
         max-width: 800px !important;
+    }
+}
+@media screen and (max-width : 470px){
+    .sec-mission{
+        .sec-mission-content{
+            .sec-m-mission{
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+        }
     }
 }
 @media screen and (max-width : 430px){

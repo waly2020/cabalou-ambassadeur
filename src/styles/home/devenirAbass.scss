@@ -18,7 +18,7 @@
     }
     .am-card{
         width: 100%;
-        max-width: 350px;
+        max-width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,7 +56,6 @@
         }
         .am-step-item-desc{
             font-weight: bold;
-            text-transform: uppercase;
         }
     }
 }

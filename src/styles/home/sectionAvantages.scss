@@ -2,28 +2,50 @@
 @import "../global/mixin.scss";
 
 .sectionAvantages{
-    padding: 60px $paddingPage;
-    background-color: #dfdeec;
+    padding: 90px $paddingPage;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    background-color: $mainColor;
+    overflow: hidden;
     gap: 10px;
     .sa-image{
         position: relative;
+        &::after,&::before{
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 200%;
+            background-color: #44aabb;
+            border: solid 4px #fff;
+            border-radius: 999px;
+        }
+        &::after{
+            left: 50%;
+            bottom: 0;
+            transform: rotate(45deg) translateY(45%) translateX(70px);
+        }
+        &::before{
+            left: 50%;
+            bottom: 0;
+            transform: rotate(45deg) translateY(50%) translateX(140px);
+        }
         img{
             position: absolute;
-            width: 130%;
-            height: 100%;
-            object-fit: cover;
+            width: 80%;
+            // height: 100%;
+            object-fit: contain;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
+            // filter: drop-shadow(5px 5px 0px #fff);
+            filter: drop-shadow(-5px -5px 0px #fff) drop-shadow(5px 5px 0px #fff);
         }
     }
     .sa-texte{
         position: relative;
         z-index: 3;
         .sa-texte-titre{
-            @include h2($pw : 450px);
+            @include h2($pw : 450px,$color : #fff);
         }
         .sa-item-content{
             display: flex;
@@ -37,8 +59,6 @@
                 align-items: center;
                 gap: 20px;
                 padding: 10px;
-                background: #fff;
-                box-shadow: 0 0 5px 3px #9b9a9a34;
                 border-radius: 5px;
                 .sa-item-icon{
                     display: flex;
@@ -46,17 +66,16 @@
                     align-items: center;
                     .sa-item-icon-content{
                         padding: 8px 10px;
-                        background-color: rgb(25, 199, 25);
                         border-radius: 99px;
                         .sa-icon{
-                            color: #fff;
+                            color: rgb(93, 247, 93);
                             font-size: 20px;
                         }
                     }
                 }
                 .sa-item-texte{
                     h3{
-                        color: $mainColor;
+                        color: #fff;
                         margin-bottom: 5px;
                     }
                     p{

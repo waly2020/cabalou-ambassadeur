@@ -2,6 +2,7 @@ import Image from "next/image";
 import {FaCheckDouble} from "react-icons/fa";
 import "../../styles/home/sectionAvantages.scss";
 import AvantageItem from "./AvantageItem";
+import Button from "./Button";
 
 export default function SectionAvantages(){
     return (
@@ -13,10 +14,6 @@ export default function SectionAvantages(){
             <div className="sa-texte">
                 <div className="sa-texte-titre">
                     <h2>Les avantages</h2>
-                    <p>
-                        Duis tempor in consectetur occaecat deserunt irure mollit consectetur.
-                        Duis tempor in consectetur occaecat deserunt.
-                    </p>
                 </div>
                 <div className="sa-item-content">
                     {/*  */}
@@ -39,6 +36,7 @@ export default function SectionAvantages(){
                         <h3>Participer aux évènements.</h3>
                     </AvantageItem>
                     {/*  */}
+                <Button/>
                 </div>
             </div>
         </div>

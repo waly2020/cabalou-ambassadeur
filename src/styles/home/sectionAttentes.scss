@@ -1,54 +1,48 @@
 @import "../global/param.scss";
 @import "../global/mixin.scss";
 
-.sectionAttentes{
+.sec-mission{
     position: relative;
-    // padding: 40px 0;
-    background-color: rgba(0, 0, 0, 0.603);
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // margin: 30px 0;
-    .att-background{
-        position: absolute;
-        // opacity: .5;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-image: url("../../../public/assets/images/header2.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-    .section-content-text{
-        margin-top: 40px;
-        @include h2($pw : 600px,$align : center,$color : #fff);
-    }
-    .att-section-card{
-        display: flex;
-        flex-flow: row wrap;
-        gap: 20px;
-        justify-content: space-around;
-        align-items: center;
-        // margin-top: 60px;
-        padding: 40px $paddingPage;
-        .att-card-item{
+    padding: 60px $paddingPage;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    .sec-mission-content{
+        .sec-m-titre{
+            margin-bottom: 50px;
+            @include h2;
+        }
+        .button-cta{
+            margin-top: 30px;
+            display: inline-block;
             width: 100%;
-            max-width: 380px;
-            background-color: #fff;
-            padding: 20px;
+            max-width: 460px;
+        }
+    }
+    .att-card-item{
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        gap: 10px;
+        margin: 20px 0;
+        align-items: center;
+        .att-icon{
+            width: 100%;
+            height: 35px;
+            background: $mainColor;
+            border-radius: 99px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+    .sec-mission-image{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 5px;
-            .att-icon{
-                color: #bbb;
-                font-size: 50px;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-            h3{
-                color: $mainColor;
-                text-align: center;
-                margin-bottom: 20px;
-            }
         }
     }
 } 

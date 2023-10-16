@@ -1,36 +1,43 @@
 import "../../styles/home/sectionAttentes.scss"
-import {FaUserAlt,FaUserCheck,FaRegEdit,FaRegThumbsUp} from "react-icons/fa"
+import {FaHandPointRight} from "react-icons/fa"
 import Mission from "./Mission";
+import Button from "./Button";
+import Image from "next/image";
 export default function SectionAttentes(){
     return (
         <>
-        <section className="sectionAttentes" id="attentes">
-        <div className="att-background"></div>
-        <div className="section-content-text">
-           <h2>vos missions</h2>
-        </div>
-        <div className="att-section-card">
-            {/*  */}
-            <Mission icon={<FaRegEdit/>}>
-            <h3>Orienter de nouveaux hébergeurs vers Cabalou</h3>
-            </Mission>
-            {/*  */}
-            {/*  */}
-            <Mission icon={<FaRegThumbsUp/>}>
-            <h3>Renforcer  la confiance et la fiabilité de la marque Cabalou</h3>
-            </Mission>
-            {/*  */}
-            {/*  */}
-            <Mission icon={<FaUserCheck/>}>
-            <h3>Participer au développement de Cabalou</h3>
-            </Mission>
-            {/*  */}
-            {/*  */}
-            <Mission icon={<FaUserAlt/>}>
-            <h3>Informer sa communauté locale des événements de Cabalou</h3>
-            </Mission>
-            {/*  */}
-        </div>
+        <section className="sec-mission" id="attentes">
+            <div className="sec-mission-content">
+                <div className="sec-m-titre">
+                    <h2>Vos missions</h2>
+                </div>
+                <div className="sec-m-mission">
+                <Mission icon={<FaHandPointRight/>}>
+                    <p>
+                    Orienter de nouveaux hébergeurs vers Cabalou.
+                    </p>
+                </Mission>
+                <Mission icon={<FaHandPointRight/>}>
+                    <p>
+                    Renforcer  la confiance et la fiabilité de la marque Cabalou.
+                    </p>
+                </Mission>
+                <Mission icon={<FaHandPointRight/>}>
+                    <p>
+                    Participer au développement de Cabalou.
+                    </p>
+                </Mission>
+                <Mission icon={<FaHandPointRight/>}>
+                    <p>
+                    Informer sa communauté locale des événements de Cabalou.
+                    </p>
+                </Mission>
+                </div>
+                <Button/>
+            </div>
+            <div className="sec-mission-image">
+                <Image src="/assets/images/mission.jpg" width={1000} height={667} alt="vos missions"/>
+            </div>
         </section>
         </>
     );

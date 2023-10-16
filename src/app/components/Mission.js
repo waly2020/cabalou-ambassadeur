@@ -1,4 +1,3 @@
-import {FaUserAlt,FaUserCheck,FaRegEdit,FaRegThumbsUp} from "react-icons/fa"
 export default function Mission({icon,children}){
     return (
         <>
