@@ -1,7 +1,7 @@
 import "../../styles/home/sectionAttentes.scss"
 import {FaHandPointRight} from "react-icons/fa"
-import Mission from "./Mission";
-import Button from "./Button";
+import Mission from "../components/Mission";
+import Button from "../components/Button";
 import Image from "next/image";
 export default function SectionAttentes(){
     return (

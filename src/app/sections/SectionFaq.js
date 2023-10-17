@@ -1,7 +1,7 @@
 "use client"; 
 import { useState } from "react";
 import "../../styles/home/sectionFaq.scss";
-import Faq from "./Faq";
+import Faq from "../components/Faq";
 export default function SectionFaq(){
     const [clickedIndex,setClikedIndex] = useState(0);
     const activeFaq = (index,click) =>{

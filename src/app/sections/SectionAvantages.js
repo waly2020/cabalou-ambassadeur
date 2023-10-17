@@ -1,8 +1,8 @@
 import Image from "next/image";
 import {FaCheckDouble} from "react-icons/fa";
 import "../../styles/home/sectionAvantages.scss";
-import AvantageItem from "./AvantageItem";
-import Button from "./Button";
+import AvantageItem from "../components/AvantageItem";
+import Button from "../components/Button";
 
 export default function SectionAvantages(){
     return (

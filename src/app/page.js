@@ -1,12 +1,12 @@
 "use client"
 import { useState } from "react";
-import Footer from "./components/Footer";
 import HeaderComponent from "./components/Header";
-import SectionAmbassadeur from "./components/SectionAmbassadeur";
-import SectionAttentes from "./components/SectionAttentes";
-import SectionAvantages from "./components/SectionAvantages";
-import SectionFaq from "./components/SectionFaq";
-import SimpleSection from "./components/SimpleSection";
+import SectionAmbassadeur from "./sections/SectionAmbassadeur";
+import SectionAttentes from "./sections/SectionAttentes";
+import SectionAvantages from "./sections/SectionAvantages";
+import SectionFaq from "./sections/SectionFaq";
+import SimpleSection from "./sections/SimpleSection";
+import Footer from "./sections/Footer";
 
 export default function Home() {
   const [active,setActive] = useState("");
@@ -41,7 +41,7 @@ export default function Home() {
       <SectionAttentes />
       <SectionAvantages />
       <SectionFaq />
-      <Footer />
+      <Footer/>
     </main>
   )
 }

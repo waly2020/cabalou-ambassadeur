@@ -1,5 +1,5 @@
 import '../../styles/home/sectionBlog.scss';
-import Blog from './Blog';
+import Blog from '../components/Blog';
 export default function SectionBlog(){
     return (
         <div className='sectionBlog' id='blog'>

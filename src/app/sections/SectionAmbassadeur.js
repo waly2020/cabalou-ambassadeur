@@ -1,5 +1,5 @@
 import "../../styles/home/devenirAbass.scss";
-import StepCard from "./StepCard";
+import StepCard from "../components/StepCard";
 import Image from "next/image";
 import {FaUserAlt,FaUserTie,FaRegEdit,FaRegThumbsUp,FaLocationArrow} from "react-icons/fa"
 
