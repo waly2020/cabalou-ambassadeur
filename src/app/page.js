@@ -7,6 +7,7 @@ import SectionAvantages from "./sections/SectionAvantages";
 import SectionFaq from "./sections/SectionFaq";
 import SimpleSection from "./sections/SimpleSection";
 import Footer from "./sections/Footer";
+import NavComponent from "./components/NavConponent";
 
 export default function Home() {
   const [active,setActive] = useState("");
@@ -18,7 +19,9 @@ export default function Home() {
     }
   }
   return (
-    <main>
+    <>
+      <NavComponent/>
+      <main>
       <HeaderComponent />
       <div id="about">
         <SimpleSection opacity={0.8}>
@@ -43,5 +46,6 @@ export default function Home() {
       <SectionFaq />
       <Footer/>
     </main>
+    </>
   )
 }

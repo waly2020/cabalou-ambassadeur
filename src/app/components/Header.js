@@ -35,8 +35,8 @@ export default function HeaderComponent(){
                 <span className="empty-span"></span>
                 {/* texte header */}
                 <div className="header-textes">
-                    <h1>Notre service, votre succès en déplacement</h1>
-                    <p>Lorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolorLorem dolor ipsum dolorem ipsum odolor</p>
+                    <h1>Rejoignez notre Communauté</h1>
+                    <p>Devenez ambassadeur Cabalou,une expérience humaine et un complément de revenu.</p>
                     <Button/>
                 </div>
                 {/* btn slide */}

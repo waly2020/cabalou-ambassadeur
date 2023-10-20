@@ -1,0 +1,151 @@
+@import "../global/param.scss";
+@import "../global/mixin.scss";
+// 
+$r-i : 5px;
+
+.input-icon{
+    display: grid;
+    &.ic-desc{
+        grid-template-columns: 45px 1fr 45px;
+    }
+    &.ic-label{
+        grid-template-columns: 45px 1fr;
+    }
+    height: 45px;
+    border-radius: 5px;
+    .text-icon{
+        font-size: 12px;
+        &.ic-end{
+            color: #777;
+        }
+    }
+    .content-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 20px;
+        background: $mainColor;
+        border-radius: $r-i 0 0 $r-i;
+        cursor: pointer;
+        &.ic-desc-ic{
+            background-color: #ddd;
+            border-radius: 0 $r-i $r-i 0;
+        }
+    }
+    input{
+        background: #f3f3f3;
+        padding: 0 10px;
+        border: none;
+        outline-color: $mainColor;
+        border-radius: 0 $r-i $r-i 0;
+        width: 100%;
+        &.have-end{
+            border-radius: 0;
+        }
+    }
+}
+.input-select{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 45px;
+    height: 45px;
+    input{
+        outline: none;
+        border: none;
+        background: #f3f3f3;
+        padding: 0 10px;
+        border-radius: $r-i 0 0 $r-i;
+        width: 100%;
+        cursor: pointer;
+    }
+    .select-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $mainColor;
+        color: #fff;
+        font-size: 20px;
+        border-radius: 0 $r-i $r-i 0;
+        cursor: pointer;
+        svg{
+            transition: .4s;
+        }
+        &.active{
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .select-option{
+        position: absolute;
+        bottom: -10px;
+        transform: translateY(105%) scaleX(0);
+        background-color: #fff;
+        width: 100%;
+        border-radius: $r-i;
+        padding: 10px 7px;
+        box-shadow: 0 0 4px 3px rgba(182, 181, 181, 0.329);
+        opacity: 0;
+        transition: opacity .5s;
+        &.active{
+            transform: translateY(100%) scaleX(1);
+            opacity: 1;
+            transition: opacity .5s;
+        }
+        button{
+            @include resetBtn;
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 10px;
+            transition: .2s;
+            &:hover{
+                background: $mainColor;
+                color: #fff;
+                border-radius: $r-i;
+                border: none;
+            }
+            &:not(:last-child){
+                border-bottom: solid 1px #ddd;
+            }
+        }
+    }
+}
+.checkbox{
+    background: rgba(238, 238, 238, 0.212);
+    padding: 10px;
+    border-radius: $r-i;
+    .checkbox-title{
+        color: $mainColor;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .checkbox-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        button{
+            // min-width: 100%;
+            display: flex;
+            gap: 10px;
+            @include resetBtn;
+            // background: #aaa;
+            span{
+                display: block;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: $r-i;
+                color: #fff;
+                background-color: #ccc;
+                // font-size: 17px;
+                &.active{
+                    background-color: $mainColor;
+                }
+            }
+        }
+    }
+}

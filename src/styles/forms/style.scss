@@ -1,0 +1,125 @@
+@import '../global/param.scss';
+@import '../global/mixin.scss';
+.body-form{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    .form-step{
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        gap: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+        border-radius: 5px;
+        // overflow: hidden;
+        & > div{
+            width: 100%;
+        }
+        .form-step-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $mainColor;
+            min-height: 500px;
+        }
+        .step-form-content{
+            display: grid;
+            grid-template-rows: 80px 1fr 70px;
+            // & > * {
+            //     border: solid 1px #000;
+            // }
+            .steps-form{
+                position: relative;
+                .step-form-item{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(6,1fr);
+                    grid-auto-rows: min-content;
+                    gap: 20px;
+                    opacity: 0;
+                    padding: 0 10px;
+                    transform: scale(.9);
+                    z-index: -1;
+                    transition: .2s;
+                    &.active{
+                        opacity: 1;
+                        transform: scale(1);
+                        z-index: 10;
+                    }
+                    // &.sfi-4{
+                    //     background-color: rgba(58, 48, 58, 0.877);
+                    // }
+                }
+            }
+            .step-button{
+                display: grid;
+                grid-template-columns: 1.3fr 2fr;
+                gap: 10px;
+                padding: 13px 10px;
+                button{
+                    padding: 0px 30px;
+                    width: 100%;
+                    // height: 50px;
+                    @include resetBtn;
+                    color: #fff;
+                    background: $mainColor;
+                    border-radius: 5px;
+                }
+            }
+            .step-chart{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .progress-bar{
+                    position: relative;
+                    width: 100%;
+                    height: 16px;
+                    max-width: 400px;
+                    padding: 3px;
+                    background-color: #ddd;
+                    border-radius: 99px;
+                    .progress-bar-anime{
+                        // margin: 5px;
+                        height: 100%;
+                        background-color: $mainColor;
+                        border-radius: 99px;
+                        transition: .5s;
+                    }
+                    .progress-step{
+                        position: absolute;
+                        background-color: #ddd;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 999px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 12px;
+                        border: solid 3px #ddd;
+                        transition: .3s .25s;
+                        &.active{
+                            background-color: $mainColor;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@for $i from 0 through 3 {
+    .ps-#{$i}{
+        top: 50%;
+        left: calc($i * 33.3333%);
+        transform: translate(-50%,-50%);
+    }
+}
+@for $i from 1 through 6{
+    .g-col-#{$i}{ 
+        grid-column: auto / span $i;
+    }
+}
