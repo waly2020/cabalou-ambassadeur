@@ -2,7 +2,7 @@
 @import "../global/mixin.scss";
 // 
 $r-i : 5px;
-
+$input-bgd : #f3f3f3;
 .input-icon{
     display: grid;
     &.ic-desc{
@@ -53,7 +53,7 @@ $r-i : 5px;
     input{
         outline: none;
         border: none;
-        background: #f3f3f3;
+        background: $input-bgd;
         padding: 0 10px;
         border-radius: $r-i 0 0 $r-i;
         width: 100%;
@@ -130,22 +130,42 @@ $r-i : 5px;
             display: flex;
             gap: 10px;
             @include resetBtn;
+            text-align: left;
             // background: #aaa;
             span{
                 display: block;
                 width: 20px;
                 height: 20px;
+                flex-shrink: 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-radius: $r-i;
                 color: #fff;
                 background-color: #ccc;
-                // font-size: 17px;
                 &.active{
                     background-color: $mainColor;
                 }
             }
         }
+    }
+}
+.text-area{
+    padding: 30px 0;
+    label{
+        color: $mainColor;
+        font-weight: bold;
+    }
+    textarea{
+        display: block;
+        width: 100%;
+        min-height: 200px;
+        resize: none;
+        outline-color: $mainColor;
+        border: none;
+        background-color: $input-bgd;
+        border-radius: $r-i;
+        margin: 20px 0;
+        padding: 20px 10px;
     }
 }

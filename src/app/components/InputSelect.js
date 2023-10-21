@@ -27,7 +27,7 @@ export default function InputSelect({values,placeholder,name,className}){
     return (
         <>
             <div className={`input-select ${className}`}>
-                <input onClick={manageActive} type="text" name={name} id="statut" placeholder={placeholder} readOnly value={inputValue == undefined ? "" : inputValue}/>
+                <input onClick={manageActive} type="text" name={name} id="statut" placeholder={placeholder} readOnly value={inputValue == undefined ? "" : inputValue} required/>
                 <label className={`select-icon ${active}`} onClick={manageActive}><AiOutlineCaretDown/></label>
                 <div className={`select-option ${active}`}>
                     {values.map((item,i,a) => <button key={i} type="button" className={`option-item oi-${i}`} onClick={() => {addValue(item)}}>{item}</button>)}

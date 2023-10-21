@@ -11,6 +11,7 @@ export default function HeaderComponent(){
         return index == nextImg ? "active" : "";
     }
     useEffect(()=>{ 
+       // eslint-disable-next-line react-hooks/exhaustive-deps
        time = setInterval(() => {
             if(cpt >= 5){
                 setCpt(0);
@@ -32,7 +33,7 @@ export default function HeaderComponent(){
             </div>
             {/* <div className="overlay"></div> */}
             <div className="content-header">
-                <span className="empty-span"></span>
+                 <span className="empty-span"></span>
                 {/* texte header */}
                 <div className="header-textes">
                     <h1>Rejoignez notre Communauté</h1>

@@ -8,28 +8,12 @@
     padding: 10px;
     .form-step{
         width: 100%;
-        max-width: 1000px;
-        display: flex;
-        gap: 10px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.30);
+        max-width: 700px;
         border-radius: 5px;
-        // overflow: hidden;
-        & > div{
-            width: 100%;
-        }
-        .form-step-image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $mainColor;
-            min-height: 500px;
-        }
         .step-form-content{
             display: grid;
             grid-template-rows: 80px 1fr 70px;
-            // & > * {
-            //     border: solid 1px #000;
-            // }
+            min-height: 500px;
             .steps-form{
                 position: relative;
                 .step-form-item{
@@ -46,18 +30,16 @@
                     z-index: -1;
                     transition: .2s;
                     &.active{
+                        position: relative;
                         opacity: 1;
                         transform: scale(1);
                         z-index: 10;
                     }
-                    // &.sfi-4{
-                    //     background-color: rgba(58, 48, 58, 0.877);
-                    // }
                 }
             }
             .step-button{
                 display: grid;
-                grid-template-columns: 1.3fr 2fr;
+                grid-template-columns: 50px 1fr;
                 gap: 10px;
                 padding: 13px 10px;
                 button{
@@ -68,12 +50,22 @@
                     color: #fff;
                     background: $mainColor;
                     border-radius: 5px;
+                    &.preview{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                        text-align: center;
+                        background-color: #aaa;
+                        font-size: 20px;
+                    }
                 }
             }
             .step-chart{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                padding: 0 20px;
                 .progress-bar{
                     position: relative;
                     width: 100%;
@@ -111,15 +103,26 @@
         }
     }
 }
-@for $i from 0 through 3 {
+@for $i from 0 through 4 {
     .ps-#{$i}{
         top: 50%;
-        left: calc($i * 33.3333%);
+        left: calc($i * 25%);
         transform: translate(-50%,-50%);
     }
 }
 @for $i from 1 through 6{
     .g-col-#{$i}{ 
         grid-column: auto / span $i;
+    }
+}
+@media screen and (max-width: 470px) {
+    
+    @for $b from 1 through 6{
+        .g-col-#{$b}{
+            grid-column: 1/ span 6;
+        }
+    }
+    .body-form{
+        padding: 0;
     }
 }
